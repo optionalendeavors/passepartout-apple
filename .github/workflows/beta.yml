@@ -5,6 +5,7 @@ on:
     branches:
       - 'master'
       - 'stable'
+      - 'fix-ci-testing'
     #tags:
     #  - 'v*-b*'
     #tags-ignore:
@@ -54,21 +55,17 @@ jobs:
         run: |
           bundle exec fastlane --env mac,beta test_target
       - name: Build (macOS)
-        if: github.ref == 'refs/heads/stable'
         run: |
           bundle exec fastlane --env mac,beta create_archive
       - name: Build (iOS)
-        if: github.ref == 'refs/heads/stable'
         run: |
           bundle exec fastlane --env ios,beta create_archive
       - name: Submit to TestFlight (macOS)
-        if: github.ref == 'refs/heads/stable'
         run: |
           export PILOT_CHANGELOG=`ci/build-changelog.sh mac`
           export PILOT_PKG="dist/mac/Passepartout.pkg"
           bundle exec fastlane --env mac,beta store_beta
       - name: Submit to TestFlight (iOS)
-        if: github.ref == 'refs/heads/stable'
         run: |
           export PILOT_CHANGELOG=`ci/build-changelog.sh ios`
           export PILOT_IPA="dist/ios/Passepartout.ipa"
