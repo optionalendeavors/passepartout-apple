@@ -738,6 +738,7 @@
 				0E9AAACA259F806B003FAFF1 /* CopyFiles */,
 				0E5203C2259F5F3F00CBAB56 /* Embed App Extensions */,
 				0E5203F6259F60D600CBAB56 /* Embed Frameworks */,
+				0E9013552736B53600CA16E0 /* Run Script (Xcode 12.4) */,
 			);
 			buildRules = (
 			);
@@ -782,6 +783,7 @@
 				0E57F63620C83FC5008323CF /* Resources */,
 				0E3152B7223F9EF500F61841 /* Embed Frameworks */,
 				0EB2B14B2733FB6F007705AB /* Embed App Extensions */,
+				0E9013542736B4EE00CA16E0 /* Run Script (Xcode 12.4) */,
 			);
 			buildRules = (
 			);
@@ -983,6 +985,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E9013542736B4EE00CA16E0 /* Run Script (Xcode 12.4) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(PLUGINS_FOLDER_PATH)/openssl.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(PLUGINS_FOLDER_PATH)/PassepartoutTunnel.appex/Frameworks",
+			);
+			name = "Run Script (Xcode 12.4)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "COUNTER=0\nwhile [ $COUNTER -lt \"${SCRIPT_INPUT_FILE_COUNT}\" ]; do\n    tmp=\"SCRIPT_INPUT_FILE_$COUNTER\"\n    FILE=${!tmp}\n\n    echo \"Removing $FILE\"\n    rm -rf \"$FILE\"\n    let COUNTER=COUNTER+1\ndone\n";
+		};
+		0E9013552736B53600CA16E0 /* Run Script (Xcode 12.4) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(PLUGINS_FOLDER_PATH)/openssl.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(PLUGINS_FOLDER_PATH)/PassepartoutTunnel.appex/Contents/Frameworks",
+			);
+			name = "Run Script (Xcode 12.4)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "COUNTER=0\nwhile [ $COUNTER -lt \"${SCRIPT_INPUT_FILE_COUNT}\" ]; do\n    tmp=\"SCRIPT_INPUT_FILE_$COUNTER\"\n    FILE=${!tmp}\n\n    echo \"Removing $FILE\"\n    rm -rf \"$FILE\"\n    let COUNTER=COUNTER+1\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E5202F3259F573500CBAB56 /* Sources */ = {
@@ -1391,7 +1436,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1025;
+				CURRENT_PROJECT_VERSION = 1030;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1457,7 +1502,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1025;
+				CURRENT_PROJECT_VERSION = 1030;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
