@@ -27,7 +27,7 @@ import Foundation
 
 public class GroupConstants {
     public class App {
-        public static let config = Bundle.main.infoDictionary?["com.algoritmico.Passepartout.config"] as? [String: Any]
+        public static let config = Bundle.main.infoDictionary?["com.optionalendeavors.Passepartout.config"] as? [String: Any]
         
         public static let name = "Passepartout"
 

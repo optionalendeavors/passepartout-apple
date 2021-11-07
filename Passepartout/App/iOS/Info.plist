@@ -38,6 +38,11 @@
 	<string>1025</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>mailto</string>
+		<string>twitch</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
@@ -84,12 +89,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>mailto</string>
-		<string>twitch</string>
-	</array>
-	<key>com.algoritmico.Passepartout.config</key>
+	<key>com.optionalendeavors.Passepartout.config</key>
 	<dict>
 		<key>appstore_id</key>
 		<string>$(CFG_APPSTORE_IOS_ID)</string>

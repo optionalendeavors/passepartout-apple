@@ -29,7 +29,7 @@ import StoreKit
 public struct LocalProduct: RawRepresentable, Equatable, Hashable {
     private static let bundleSubdomain = "ios"
 
-    private static let bundle = "com.algoritmico.\(bundleSubdomain).Passepartout"
+    private static let bundle = "com.optionalendeavors.\(bundleSubdomain).Passepartout"
 
     private static let donationsBundle = "\(bundle).donations"
     

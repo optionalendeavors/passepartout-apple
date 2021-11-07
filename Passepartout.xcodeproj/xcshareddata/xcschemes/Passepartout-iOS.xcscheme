@@ -77,7 +77,7 @@
          <EnvironmentVariable
             key = "FULL_VERSION"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>

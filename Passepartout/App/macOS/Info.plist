@@ -60,7 +60,7 @@
 		<string>UntrustCellularNetworkIntent</string>
 		<string>UntrustCurrentNetworkIntent</string>
 	</array>
-	<key>com.algoritmico.Passepartout.config</key>
+	<key>com.optionalendeavors.Passepartout.config</key>
 	<dict>
 		<key>app_launcher_id</key>
 		<string>$(CFG_APP_LAUNCHER_ID)</string>

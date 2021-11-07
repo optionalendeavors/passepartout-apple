@@ -60,7 +60,7 @@ public extension ConnectionService {
                 continue
             }
             let keychain = Keychain(group: GroupConstants.App.groupId)
-            let prefix = "com.algoritmico.ios.Passepartout"
+            let prefix = "com.optionalendeavors.ios.Passepartout"
 
             // profiles
             do {

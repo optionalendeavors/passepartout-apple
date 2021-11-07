@@ -314,16 +314,19 @@ public class AppConstants {
     }
 
     public struct InApp {
-        public static let locksBetaFeatures = true
+        public static let locksBetaFeatures = false
+
+        public static let isBetaFullVersion = true
 
         #if os(iOS)
-        public static var isBetaFullVersion: Bool {
-            return ProcessInfo.processInfo.environment["FULL_VERSION"] != nil
-        }
+//        public static var isBetaFullVersion: Bool {
+//            return ProcessInfo.processInfo.environment["FULL_VERSION"] != nil
+//        }
+//        public static let isBetaFullVersion = true
 
         public static let lastFullVersionBuild: (Int, LocalProduct) = (2016, .fullVersion_iOS)
         #else
-        public static let isBetaFullVersion = false
+//        public static let isBetaFullVersion = false
 
         public static let lastFullVersionBuild: (Int, LocalProduct) = (0, .fullVersion_macOS)
         #endif
