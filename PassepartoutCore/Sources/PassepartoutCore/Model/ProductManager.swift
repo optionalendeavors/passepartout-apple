@@ -105,7 +105,9 @@ public class ProductManager: NSObject {
         return Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
         #endif
         #else
-        return false
+        // For the locally built version, we'll say that we're a beta version.
+        return true
+//        return false
         #endif
     }
 
