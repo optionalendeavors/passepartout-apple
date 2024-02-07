@@ -95,7 +95,7 @@
 	</array>
 	<key>UISupportsDocumentBrowser</key>
 	<true/>
-	<key> com.optionalendeavors.Passepartout.config </key>
+	<key>com.optionalendeavors.Passepartout.config</key>
 	<dict>
 		<key>appstore_id</key>
 		<string>$(CFG_APPSTORE_ID)</string>
