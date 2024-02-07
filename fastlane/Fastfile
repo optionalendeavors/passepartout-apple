@@ -13,20 +13,4 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-import("../Submodules/fastlane-ci-templates/fastlane/Fastfile.include")
-
-desc "Preinstall development certificates"
-lane :preinstall_development_certs do
-    create_keychain(
-        name: ENV["MATCH_KEYCHAIN_NAME"],
-        password: ENV["MATCH_KEYCHAIN_PASSWORD"]
-    )
-    match(
-        platform: "macos",
-        type: "development"
-    )
-    match(
-        platform: "ios",
-        type: "development"
-    )
-end
+import("Fastfile.include")

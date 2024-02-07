@@ -3,7 +3,7 @@
 //  Passepartout
 //
 //  Created by Davide De Rosa on 5/24/19.
-//  Copyright (c) 2021 Davide De Rosa. All rights reserved.
+//  Copyright (c) 2024 Davide De Rosa. All rights reserved.
 //
 //  https://github.com/passepartoutvpn
 //
@@ -27,15 +27,14 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 CFG_TEAM_ID = 5SXM8SN27N
-CFG_APP_IOS_ID = com.optionalendeavors.ios.Passepartout
-//CFG_APP_MACOS_ID = com.optionalendeavors.macos.Passepartout
-//CFG_APP_LAUNCHER_ID = com.optionalendeavors.macos.Passepartout.Launcher
-CFG_APP_MACOS_ID = com.optionalendeavors.ios.Passepartout
-CFG_APP_LAUNCHER_ID = com.optionalendeavors.ios.Passepartout.Launcher
+CFG_APP_ID = com.optionalendeavors.ios.Passepartout
+CFG_MAC_ID = com.optionalendeavors.ios.Passepartout Mac
+CFG_LAUNCHER_ID = com.optionalendeavors.ios.Passepartout Launcher
 CFG_GROUP_ID = com.optionalendeavors.Passepartout
-CFG_APPSTORE_IOS_ID = 1433648537
-//CFG_APPSTORE_MACOS_ID = 1433645014
-CFG_APPSTORE_MACOS_ID = 1433648537
-CFG_COPYRIGHT = Copyright © 2021 Davide De Rosa. All rights reserved.
+CFG_APPSTORE_ID = 1433648537
+CFG_COPYRIGHT = Copyright © 2024 Davide De Rosa. All rights reserved.
+
+PATH = $(PATH):/opt/homebrew/bin:/usr/local/bin:/usr/local/go/bin
+CUSTOM_SCRIPT_PATH = $(PATH)
 
 #include? "Secret.xcconfig"
